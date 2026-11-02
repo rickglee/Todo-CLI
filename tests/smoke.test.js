@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 
 test("tasks persist across add, list, done, and remove commands", () => {
     const cwd = mkdtempSync(join(tmpdir(), "todo-cli-"));
-    const entry = fileURLToPath(new URL("../index.js", import.meta.url));
+    const entry = fileURLToPath(new URL("../src/index.js", import.meta.url));
     const run = (...args) => spawnSync(process.execPath, [entry, ...args], {
         cwd, encoding: "utf8"
     });
