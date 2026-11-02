@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Runtime data
+data/
+
+# Logs
+*.log
+
+# Coverage reports
+coverage/
+
+# System files
+.DS_Store
+Thumbs.db
